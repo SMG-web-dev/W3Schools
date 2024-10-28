@@ -1,0 +1,73 @@
+/* app.css */
+
+/* Header styles */
+.app-header {
+  background-image: linear-gradient(to right, #dc2626, #991b1b);
+}
+
+/* Sidebar styles */
+.sidebar-nav {
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-nav button {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Main content styles */
+.main-content h2 {
+  border-bottom: 2px solid #fecaca;
+  padding-bottom: 0.5rem;
+}
+
+.main-content code {
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25em;
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Example box styles */
+.example-box {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.example-box:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Navigation button styles */
+.nav-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+}
+
+.nav-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 80%;
+    max-width: 300px;
+    z-index: 1000;
+    background-color: white;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .sidebar-nav.open {
+    left: 0;
+  }
+}
