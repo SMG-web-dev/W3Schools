@@ -1,4 +1,11 @@
 {
+  "compilerOptions": {
+    "target": "es6",                    // Especifica el estándar de ECMAScript de destino
+    "module": "commonjs",               // Especifica el sistema de módulos a usar
+    "strict": true,                      // Activa todas las comprobaciones estrictas
+    "noImplicitAny": false,              // Desactiva la restricción de 'any' implícito
+    "strictNullChecks": false,           // Desactiva la comprobación estricta de valores nulos y indefinidos
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
